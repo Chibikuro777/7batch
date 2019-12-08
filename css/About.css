@@ -24,7 +24,7 @@ body{
     display: flex;
     align-items: center;
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 250%;
 }
 
 nav{
@@ -80,7 +80,6 @@ nav li{
     background-color: beige;
     font-size: 20px;
     border-radius: 10px;
-
 }
 
 nav li a{
@@ -220,13 +219,13 @@ footer img{
 
 .box1{
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 150%;
     line-height: 30px;
 }
 
 .box2{
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 150%;
     line-height: 30px;
 }
 
@@ -254,4 +253,133 @@ footer img{
     background-image: url(../img/img2/Runa2.jpg);
     background-size: cover;
    }
+}
+
+@media screen and (max-width: 950px){
+    header{
+        justify-content: center;
+    }
+
+    .title{
+        align-items: center;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    nav li{
+        margin-left: 0px;
+    }
+
+    nav{
+        margin-right: 0px;
+    }
+
+    #scroll-up{
+        position: fixed;
+        bottom: 200px;
+        right: 140px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .box1{
+        font-size: 100%;
+        line-height: 20px;
+    }
+    
+    .box2{
+        font-size: 100%;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    #scroll-up{
+        position: fixed;
+        bottom: 140px;
+        right: 90px;
+        width: 10px;
+        height: 10px
+    }
+
+    #scroll-up img{
+        width: 40px;
+        height: 40px;
+    }
+
+    header{
+        justify-content: center;
+        height: 100px;
+        align-items: center;
+    }
+
+    #slide{
+        height: 300px;
+    }
+
+    #slide img{
+        height: 300px;
+    }
+
+    .footer-right img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        transform: rotate(-45deg);
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .footer-right{
+        margin-right: 10px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .title{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    aside:nth-child(even){
+        flex-direction: column;
+    }
+
+    .imgbox{
+        margin-bottom: 20px;
+    }
+
+    .description .box2, .description .box1{
+        margin-bottom: 20px;
+    }
+
+    .footer-center p{
+        font-size: 100%;
+    }
+
+    .box1{
+        font-size: 100%;
+        line-height: 20px;
+    }
+    
+    .box2{
+        font-size: 100%;
+        line-height: 20px;
+    }
+    
 }

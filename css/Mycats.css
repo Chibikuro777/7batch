@@ -23,7 +23,7 @@ body{
     display: flex;
     align-items: center;
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 250%;
 }
 
 nav{
@@ -55,7 +55,7 @@ nav{
 header h1{
     margin-left: 10px;
     color: navy;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 ul{
@@ -208,13 +208,13 @@ footer img{
 
 .box1{
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 150%;
     line-height: 30px;
 }
 
 .box2{
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 150%;
     line-height: 30px;
 }
 
@@ -269,3 +269,125 @@ footer img{
 #slide img:nth-of-type(3){
     animation-delay: 9s;
 } 
+
+@media screen and (max-width: 950px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .title{
+        align-items: center;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    nav li{
+        margin-left: 0px;
+    }
+
+    nav{
+        margin-right: 0px;
+    }
+
+    #scroll-up{
+        position: fixed;
+        bottom: 200px;
+        right: 140px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (max-width: 560px){
+    .title img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    
+    .title{
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav{
+        margin-right: 0px;
+    }
+
+    #scroll-up img{
+        width: 30px;
+        height: 30px;
+    }
+
+    header{
+        height: 100px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 230px;
+    }
+
+    .title h1{
+        font-size: 70%;
+    }
+
+    ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .description{
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    #slide{
+        height: 300px;
+    }
+
+    #slide img{
+        height: 300px;
+    }
+
+    .footer-right img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .footer-center p{
+        font-size: 100%;
+
+    }
+
+    .footer-right{
+        margin-right: 10px;
+    }
+
+    #scroll-up{
+        position: fixed;
+        bottom: 130px;
+        right: 80px;
+        width: 10px;
+        height: 10px
+    }
+
+    .box1, .box2{
+        font-size: 110%;
+        margin: 20px;
+    }
+}
