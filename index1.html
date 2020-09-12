@@ -12,9 +12,9 @@
 
 <body>
     <div class="container">
-            <div id="scroll-up">
-                    <a href="About.html"><img src="img/img2/scrollup.jpg" alt="" width="50px" height="50px"></a>
-                </div>
+        <div id="scroll-up">
+            <a href=""><img src="img/img2/scrollup.jpg" id="scroll-top" alt="" width="50px" height="50px"></a>
+        </div>
         <header>
             <nav>
                 <ul>
@@ -26,11 +26,11 @@
         </header>
 
         <article>
-                <div class="title">
-                        <img src="img/img2/Nikukyu.jpg" alt="Nikukyu">
-                        <h1>チビ・クロ・ルナの生立ちについて</h1>
-                        <img src="img/img2/Nikukyu.jpg" alt="Nikukyu">
-                    </div>
+            <div class="title">
+                <img src="img/img2/Nikukyu.jpg" alt="Nikukyu">
+                <h1>チビ・クロ・ルナの生立ちについて</h1>
+                <img src="img/img2/Nikukyu.jpg" alt="Nikukyu">
+            </div>
             <section class="description-container">
                 <aside class="description imgcontainer">
                     <div class="imgbox">
@@ -55,11 +55,11 @@
                     </p>
                 </aside>
                 <aside class="description imgcontainer">
-                        <div class="imgbox">
-                            <img src="img/img2/Runa4.jpg" alt="クロの写真" id="Runa4">
-                            <h3>ルナ<span style="color: red;">♀</span></h3>
-                        </div>
-                        <p class="box1">ルナの生立ちはチビとクロとは少し異なります。<br>
+                    <div class="imgbox">
+                        <img src="img/img2/Runa4.jpg" alt="クロの写真" id="Runa4">
+                        <h3>ルナ<span style="color: red;">♀</span></h3>
+                    </div>
+                    <p class="box1">ルナの生立ちはチビとクロとは少し異なります。<br>
                         ルナはよく見ると分かりますが、片耳が千切れています。<br>
                         これは野良猫が去勢手術をした場合に、獣医師によって施されるものです。<br>
                         ルナは元々、私の妹の旦那さんのご両親が経営する工場に居着いたノラ猫です。<br>
@@ -67,14 +67,14 @@
                         私の家ではチビとクロがいましたが、遊び足りないのかチビがクロに噛み付いたりするのでもう１匹飼うと状況が変わるのではないかと考えていました。<br>
                         人見知りで警戒心が強いので中々保護できませんでしたが、やっと去勢手術をしうちで引き取ることになりました。<br>
                         先住猫のチビとクロは当初1ヶ月ほどは、ケージに入れていたルナに対し近ずく度に威嚇していましたが、徐々に慣れ今では２匹を追いかけ回すヤンチャものです。
-                        </p>
-                    </aside>
+                    </p>
+                </aside>
             </section>
         </article>
 
         <footer>
             <div class="footer-center">
-                <p><small><strong>&copy;</strong></small>Copyright All Reserved Written by 
+                <p><small><strong>&copy;</strong></small>Copyright All Reserved Written by
                     <strong style="color: royalblue; font-style: italic;">Sanae Kawasaka</strong> -Oct 2019-</p>
             </div>
             <div class="footer-right">
@@ -83,5 +83,17 @@
         </footer>
     </div>
 </body>
+<script>
+    document.getElementById("scroll-top").addEventListener('click', function (e) {
+        anime.remove("html, body");
+        anime({
+            targets: "html, body",
+            scrollTop: 0,
+            dulation: 600,
+            easing: 'easeOutCubic',
+        });
+        return false;
+    });
+</script>
 
 </html>
